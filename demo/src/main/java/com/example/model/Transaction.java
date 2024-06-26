@@ -20,5 +20,34 @@ public class Transaction {
     }
 
     // Getters and Setters
-    // ... (add getters and setters for all fields)
+    public String getTransactionHash(){
+        return transactionHash;
+    }
+    public void setTransactionHash(String transactionHash){
+        this.transactionHash = transactionHash;
+    }
+    public String getFrom(){
+        return from;
+    }
+    public void setFrom(String from){
+        this.from = from;
+    }
+    public String getTo(){
+        return to;
+    }
+    public void setTo(String to){
+        this.to = to;
+    }
+    public BigDecimal getAmount(){
+        return amount;
+    }
+    public void setAmount(BigDecimal amount){
+        this.amount = amount;
+    }
+    public LocalDateTime getTimestamp(){
+        return timestamp;
+    }
+    public void setTimestamp(LocalDateTime timestamp){
+        this.timestamp = timestamp;
+    }
 }
