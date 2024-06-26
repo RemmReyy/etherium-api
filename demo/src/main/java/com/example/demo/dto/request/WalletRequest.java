@@ -1,4 +1,4 @@
-package com.example.dto.request;
+package com.example.demo.dto.request;
 
 public class WalletRequest {
     private String privateKey;

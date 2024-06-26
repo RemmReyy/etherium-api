@@ -1,4 +1,4 @@
-package com.example.service;
+package com.example.demo.service;
 
 import org.springframework.stereotype.Service;
 import org.web3j.crypto.Credentials;
@@ -10,10 +10,10 @@ import org.web3j.protocol.http.HttpService;
 import org.web3j.tx.Transfer;
 import org.web3j.utils.Convert;
 
-import com.example.dto.response.BalanceResponse;
-import com.example.dto.response.TransactionResponse;
-import com.example.dto.response.WalletResponse;
-import com.example.model.Transaction;
+import com.example.demo.dto.response.BalanceResponse;
+import com.example.demo.dto.response.TransactionResponse;
+import com.example.demo.dto.response.WalletResponse;
+import com.example.demo.model.Transaction;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -27,7 +27,7 @@ public class EthereumService {
     private Credentials credentials;
 
     public EthereumService() {
-        this.web3j = Web3j.build(new HttpService("https://mainnet.infura.io/v3/YOUR-PROJECT-ID"));
+        this.web3j = Web3j.build(new HttpService("https://mainnet.infura.io/v3/fe7e468542f24ac3a1cb0a1fbc6c009e"));
     }
 
     public WalletResponse connectWallet(String privateKey) {

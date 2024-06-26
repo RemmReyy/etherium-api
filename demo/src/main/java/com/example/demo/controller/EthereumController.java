@@ -1,16 +1,17 @@
-package com.example.controller;
+package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.List;
-import com.example.dto.request.WalletRequest;
-import com.example.dto.response.WalletResponse;
-import com.example.model.Transaction;
-import com.example.service.EthereumService;
-import com.example.dto.response.BalanceResponse;
-import com.example.dto.response.TransactionResponse;
-import com.example.dto.request.TransactionRequest;
+
+import com.example.demo.dto.request.TransactionRequest;
+import com.example.demo.dto.request.WalletRequest;
+import com.example.demo.dto.response.BalanceResponse;
+import com.example.demo.dto.response.TransactionResponse;
+import com.example.demo.dto.response.WalletResponse;
+import com.example.demo.model.Transaction;
+import com.example.demo.service.EthereumService;
 
 @RestController
 @RequestMapping("/api")

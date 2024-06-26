@@ -1,4 +1,4 @@
-package com.example.dto.response;
+package com.example.demo.dto.response;
 
 public class TransactionResponse {
     private String transactionHash;
